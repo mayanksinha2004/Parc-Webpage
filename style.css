@@ -1,0 +1,305 @@
+body{
+  background: #E7F6F2;
+}
+nav{
+  background: #303184;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: block;
+}
+nav ul{
+  float: right;
+  list-style: none;
+  margin-right: 40px;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: block;
+  background: #303184;
+  margin: 0 5px;
+}
+nav ul li a{
+  color : white;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 45px 20px;
+  font-family: sans-serif;
+}
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  opacity: 1;
+  visibility: hidden;
+  transition: top.3s;
+}
+nav ul li:hover > ul{
+  top: 100px;
+  opacity: 1;
+  visibility: visible;
+
+}
+nav ul ul li{
+   position: relative;
+   margin: 0px;
+   width: 350px;
+   float: none;
+   display: list-item;
+   border-bottom: 1px solid rgb(166, 209, 230);
+}
+nav ul li a:hover{
+  color: cyan;
+}
+.logo{
+  float: left;
+}
+.p1{
+  margin-top: 60px;
+  font-size: 30px;
+  font-family: cursive;
+  color: #303184;
+
+}
+.p2{
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: cursive;
+  color: grey;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+.banner{
+  border-radius: 6px;
+  width: 918px;
+  height: 368px;
+}
+.p3{
+  margin-top: 25px;
+  font-size: 30px;
+  font-family: cursive;
+}
+.p4{
+  margin-left: 460px;
+  margin-right: 430px;
+  font-size: 24px;
+  font-family: cursive;
+  color: grey;
+  float:left;
+}
+.Origin{
+  margin-left: 460px;
+  font-family: cursive;
+  font-size: 30px;
+}
+.p5{
+  margin-top: -10px;
+  margin-left: 460px;
+  margin-right: 430px;
+  font-size: 24px;
+  font-family: cursive;
+  color: grey;
+  float:left;
+}
+.Role{
+  margin-left: 460px;
+  font-family: cursive;
+  font-size: 30px;
+}
+.p6{
+  margin-top: -10px;
+  margin-left: 460px;
+  margin-right: 430px;
+  font-size: 24px;
+  font-family: cursive;
+  color: grey;
+  float:left;
+}
+.p7{
+  margin-top: 350px;
+  margin-left: 0px;
+  font-size: 18px;
+  font-family: cursive;
+  color: #303184;
+}
+.p8{
+  margin-left: 24px;
+  font-size: 18px;
+  font-family: cursive;
+  color: #303184;
+}
+.Footer{
+  background: #303184;
+  overflow: auto;
+}
+.f1{
+  float: left;
+  margin-left: 740px;
+}
+.f2{
+  float: left;
+  margin-left: 60px;
+}
+.f3{
+  float: left;
+  margin-left: 60px;
+}
+.f4{
+  float: left;
+  margin-left: 690px;
+  color: grey;
+}
+.f5{
+  float: left;
+  margin-left: 60px;
+  color: grey;
+}
+.f6{
+  color: #E7F6F2;
+  font-size: 20px;
+}
+div a{
+  text-decoration: none;
+  color: #E7F6F2;
+}
+nav .menu-btn i{
+   margin-top: 40px;
+   margin-right: 30px;
+   float:right;
+   color: #fff;
+   font-size: 20px;
+   cursor: pointer;
+   display: none;
+}
+#click{
+  display: none;
+}
+@media only screen and (max-width: 940px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3 ease;
+  }
+  #click:checked ~ ul{
+    left: 0%;
+  }
+  nav ul li{
+    margin: 40px 0px;
+    display: block;
+  }
+  nav ul li a{
+    font-size: 20px;
+    display: block;
+  }
+  .banner{
+    border-radius: 6px;
+    width: 100%;
+    height: 60%;
+  }
+  .p3{
+    margin-top: 25px;
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+  }
+  .p4{
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 24px;
+    font-family: cursive;
+    color: grey;
+    float:left;
+    text-align: left;
+  }
+  .Origin{
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: cursive;
+    font-size: 30px;
+    text-align: left;
+  }
+  .p5{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -10px;
+    font-size: 24px;
+    font-family: cursive;
+    color: grey;
+    float:left;
+  }
+  .Role{
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: cursive;
+    font-size: 30px;
+  }
+  .p6{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -10px;
+    font-size: 24px;
+    font-family: cursive;
+    color: grey;
+    float:left;
+  }
+  .p7{
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 18px;
+    font-family: cursive;
+    color: #303184;
+  }
+  .p8{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-left: 24px;
+    font-size: 18px;
+    font-family: cursive;
+    color: #303184;
+  }
+  .Footer{
+    background: #303184;
+    overflow: auto;
+  }
+  .f1{
+    float: left;
+    margin-left: 740px;
+  }
+  .f2{
+    float: left;
+    margin-left: 60px;
+  }
+  .f3{
+    float: left;
+    margin-left: 60px;
+  }
+  .f4{
+    float: left;
+    margin-left: 690px;
+    color: grey;
+  }
+  .f5{
+    float: left;
+    margin-left: 60px;
+    color: grey;
+  }
+  .f6{
+    color: #E7F6F2;
+    font-size: 20px;
+  }
+
+}
